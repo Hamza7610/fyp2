@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.Popups.ConfirmationPopUp"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 >
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation   
+                      PositionIn="Center"  
+                      PositionOut="Center"  
+                      ScaleIn="1.2"  
+                      ScaleOut="0.8"  
+                      DurationIn="400"  
+                      DurationOut="300"  
+                      EasingIn="SinOut"  
+                      EasingOut="SinIn"/>
+
+    </pages:PopupPage.Animation>
+   <StackLayout VerticalOptions="Center"  Padding="20,0" HorizontalOptions="FillAndExpand" >
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="{StaticResource Primary}" >
+            <StackLayout Padding="10">
+                <Label  Text="{Binding MainTitle}" TextColor="Black" FontSize="20" HorizontalOptions="Center" />
+                <ScrollView>
+                    <StackLayout>
+                        <StackLayout>
+                            <Label  Text="{Binding Message}" TextColor="LightBlue" FontSize="Medium" HorizontalOptions="Center"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="StartAndExpand" >
+                                    <Button  Text="{Binding YesButtonText}" Command="{Binding OKCommand}" />
+                                </StackLayout>
+                                <StackLayout Grid.Column="1" HorizontalOptions="CenterAndExpand">
+                                    <Button  Text="{Binding NoButtonText}" Command="{Binding CancelCommand}" />
+                                </StackLayout>                               
+                            </Grid> 
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</pages:PopupPage>
+    

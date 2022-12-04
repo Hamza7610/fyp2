@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mymovies.Views.SeasonsEpisodePage"
+             xmlns:local="clr-namespace:mymovies.ViewModels"  
+             xmlns:model="clr-namespace:mymovies.Models">
+    <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource Primary}">
+        <Label Text="Season Episode"  
+               FontAttributes="Bold"  
+               FontSize="Medium"  
+               VerticalOptions="Start"  
+               HorizontalTextAlignment="Center"  
+               VerticalTextAlignment="Center"  
+               BackgroundColor="Transparent"  
+               HorizontalOptions="CenterAndExpand" TextColor="White" />
+        <RefreshView x:DataType="local:SeasonEpisodeViewModel" Command="{Binding LoadCommand}" IsRefreshing="{Binding IsBusy,Mode=TwoWay}">
+            <CollectionView x:Name="SeasonsListView"
+                ItemsSource="{Binding LstSeasons}"
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" x:DataType="model:SeasonEpisodes" >
+                            <Image Source="{Binding image_path}" HeightRequest="200" Aspect="AspectFill" />                            
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="AUTO"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding episode}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"  FontSize="18"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" />
+                                <ImageButton BackgroundColor="Transparent" Grid.Row="0" Grid.Column="1" Source="DownloadIcon" HorizontalOptions="End" HeightRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type local:SeasonEpisodeViewModel}}, Path=StartDownloadCommand}"
+                                        CommandParameter="{Binding .}" >
+                                </ImageButton>
+                            </Grid>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:SeasonEpisodeViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}"
+            VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+
+    </StackLayout>
+    
+</ContentPage>

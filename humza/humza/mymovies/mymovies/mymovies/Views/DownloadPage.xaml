@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mymovies.Views.DownloadPage"
+             xmlns:local="clr-namespace:mymovies.ViewModels"  
+             xmlns:model="clr-namespace:mymovies.Models">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource Primary}">
+            <Label Text="Downloads"  
+               FontAttributes="Bold"  
+               FontSize="Medium"  
+               VerticalOptions="Start"  
+               HorizontalTextAlignment="Center"  
+               VerticalTextAlignment="Center"  
+               BackgroundColor="Transparent"  
+               HorizontalOptions="CenterAndExpand" TextColor="White" />
+            
+            <RefreshView x:DataType="local:DownloadsViewModel" Command="{Binding LoadCommand}" IsRefreshing="{Binding IsBusy,Mode=TwoWay}">
+                <CollectionView x:Name="DownloadMoviesListView"
+                ItemsSource="{Binding LstMovies}"
+                SelectionMode="None"
+                RemainingItemsThreshold="5"
+                RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" x:DataType="model:DownloadView" >
+                                <Image Source="{Binding Photo}" HeightRequest="200" Aspect="AspectFill" /> 
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="AUTO"></RowDefinition>
+                                        <RowDefinition Height="AUTO"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding name}" Grid.Row="0"  LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"  FontSize="16"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" />
+                                    <Label Text="In Progress" Grid.Row="1" Grid.Column="0"  LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"  FontSize="12" HorizontalTextAlignment="Start" TextColor="White" IsVisible="{Binding InProgress}" />
+                                    <Label Text="Downloaded" Grid.Row="1" Grid.Column="0"  FontSize="12" HorizontalTextAlignment="Start" TextColor="White" IsVisible="{Binding isCompleted}" />
+                                    <Label Text="{Binding percentage}" Grid.Row="1" Grid.Column="1"  FontSize="12" HorizontalTextAlignment="Start" TextColor="White" IsVisible="{Binding InProgress}" />
+                                    <ImageButton Source="CrossIcon.jpg" Grid.RowSpan="2" Grid.Column="2" BackgroundColor="Transparent" HorizontalOptions="End" HeightRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type local:DownloadsViewModel}}, Path=RemoveCommand}"		
+                                CommandParameter="{Binding .}"  />
+                                </Grid>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:DownloadsViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                    </TapGestureRecognizer>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+            <ActivityIndicator IsRunning="{Binding IsBusyLoadMore}"
+                           HeightRequest="30"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           WidthRequest="30"/>
+
+            <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}"
+            VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

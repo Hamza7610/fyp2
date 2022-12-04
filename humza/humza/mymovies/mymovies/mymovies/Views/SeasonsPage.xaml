@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mymovies.Views.SeasonsPage"
+             xmlns:local="clr-namespace:mymovies.ViewModels"  
+             xmlns:model="clr-namespace:mymovies.Models"
+             xmlns:helpers="clr-namespace:mymovies.Helper">
+    <ContentPage.Resources>
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="materialfont.ttf#Material Design Icons" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource Primary}">
+        <Label Text="Seasons"  
+               FontAttributes="Bold"  
+               FontSize="Medium"  
+               VerticalOptions="Start"  
+               HorizontalTextAlignment="Center"  
+               VerticalTextAlignment="Center"  
+               BackgroundColor="Transparent"  
+               HorizontalOptions="CenterAndExpand" TextColor="White" />
+        <SearchBar x:Name="Searchbar" Placeholder="Search" TextChanged="Searchbar_TextChanged" Text="{Binding SearchedText}" BackgroundColor="WhiteSmoke">
+
+        </SearchBar>
+        <RefreshView x:DataType="local:SeasonsViewModel" Command="{Binding LoadCommand}" IsRefreshing="{Binding IsBusy,Mode=TwoWay}">
+            <CollectionView x:Name="SeasonsListView"
+                ItemsSource="{Binding LstSeasons}"
+                SelectionMode="None"
+                RemainingItemsThreshold="5"
+                RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" x:DataType="model:Seasons" >
+                            <Image Source="{Binding image_path}" HeightRequest="200" Aspect="AspectFill" />
+                            <Label Text="{Binding name}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"  FontSize="16"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" />
+                            <StackLayout IsVisible="{Binding isReview}">
+                                <Label Text="{Binding reviews.description}"   FontSize="13"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="{StaticResource TextColor}" />
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="8*"></ColumnDefinition>
+                                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="AUTO"></RowDefinition>
+                                        <RowDefinition Height="AUTO"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Start">
+                                        <CollectionView 
+                                                 ItemsSource="{Binding reviews.RatingList}"
+                                                 HeightRequest="20"
+                                                 HorizontalOptions="Start">
+                                            <CollectionView.ItemsLayout>
+                                                <LinearItemsLayout Orientation="Horizontal" />
+                                            </CollectionView.ItemsLayout>
+                                            <CollectionView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Button ImageSource="{FontImage FontFamily={StaticResource MaterialFontFamily},Glyph={x:Static helpers:IconFont.Star},Size=18,Color=Yellow}" WidthRequest="30"  />
+                                                </DataTemplate>
+                                            </CollectionView.ItemTemplate>
+                                        </CollectionView>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="0" Grid.Column="1">
+                                        <Label Text="{Binding reviews.IMDBRating}"   FontSize="13"  FontAttributes="Bold" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextColor="{StaticResource TextColor}" />
+                                    </StackLayout>
+                                    <Label Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding reviews.genre}" FontSize="12"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="{StaticResource TextColor}" />
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:SeasonsViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        <ActivityIndicator IsRunning="{Binding IsBusyLoadMore}"
+                           HeightRequest="30"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           WidthRequest="30"/>
+
+    </StackLayout>
+</ContentPage>

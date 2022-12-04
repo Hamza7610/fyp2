@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              x:Class="mymovies.Views.SignUpPage"
+       xmlns:helpers="clr-namespace:mymovies.Helper">
+    <ContentPage.Resources>
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="materialfont.ttf#Material Design Icons" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <Frame  HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Image Source="logo.png" />
+                    <Grid>
+                        <Entry x:Name="Name" Unfocused="Name_Unfocused"  Focused="Name_Focused"  Text="{Binding Name}"                                  
+                           HeightRequest="40" TextColor="Black"></Entry>
+                        <Label x:Name="NameTitle" Text="Full Name" FontSize="18">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="NameTitle_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <Grid>
+                        <Entry x:Name="Email" Unfocused="EntryField_Unfocused"  Focused="EntryField_Focused" Text="{Binding Email}"                                  
+                           HeightRequest="40" TextColor="Black" Keyboard="Email"></Entry>
+                        <Label x:Name="EmailTitle" Text="Email" FontSize="18">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="UsernameTitle_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <Grid>
+                        <Entry x:Name="Password" Unfocused="Password_Unfocused"  Focused="Password_Focused"  Text="{Binding Password}" IsPassword="True"                                 
+                           HeightRequest="40" TextColor="Black"></Entry>
+                        <Label x:Name="PasswordTitle" Text="Password" FontSize="18">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="PasswordTitle_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button VerticalOptions="Center" Text="Register"  Command="{Binding SignUpCommand}" Grid.Column="0" ImageSource="{FontImage FontFamily={StaticResource MaterialFontFamily},Glyph={x:Static helpers:IconFont.AccountPlus},Size=Large}"/>
+                <Button VerticalOptions="Center" Text="Login"  Command="{Binding LoginCommand}" Grid.Column="1" ImageSource="{FontImage FontFamily={StaticResource MaterialFontFamily},Glyph={x:Static helpers:IconFont.Login},Size=Large}"/>
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

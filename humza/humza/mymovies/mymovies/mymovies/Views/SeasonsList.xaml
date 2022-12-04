@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mymovies.Views.SeasonsList"
+             xmlns:local="clr-namespace:mymovies.ViewModels"  
+             xmlns:model="clr-namespace:mymovies.Models"
+             xmlns:helpers="clr-namespace:mymovies.Helper">
+    <ContentPage.Resources>
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="materialfont.ttf#Material Design Icons" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource Primary}">
+            <Label Text="Seasons"  
+               FontAttributes="Bold"  
+               FontSize="Medium"  
+               VerticalOptions="Start"  
+               HorizontalTextAlignment="Center"  
+               VerticalTextAlignment="Center"  
+               BackgroundColor="Transparent"  
+               HorizontalOptions="CenterAndExpand" TextColor="White" />
+
+            <RefreshView x:DataType="local:SeasonsListViewModel" Command="{Binding LoadCommand}" IsRefreshing="{Binding IsBusy,Mode=TwoWay}">
+                <CollectionView x:Name="SeasonsListView"
+                ItemsSource="{Binding LstSeasons}"
+                SelectionMode="None"
+                RemainingItemsThreshold="5">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" x:DataType="model:Seasons">
+                                <Label Text="{Binding name}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"  FontSize="16"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" />
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:SeasonsListViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                    </TapGestureRecognizer>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

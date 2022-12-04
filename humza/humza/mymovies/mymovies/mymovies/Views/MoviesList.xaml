@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mymovies.Views.MoviesList"
+             xmlns:model="clr-namespace:mymovies.Models"
+             xmlns:helpers="clr-namespace:mymovies.Helper"
+             xmlns:local="clr-namespace:mymovies.ViewModels" >
+    <ContentPage.Resources>
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="materialfont.ttf#Material Design Icons" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource Primary}">
+            <Label Text="Movies"  
+               FontAttributes="Bold"  
+               FontSize="Medium"  
+               VerticalOptions="Start"  
+               HorizontalTextAlignment="Center"  
+               VerticalTextAlignment="Center"  
+               BackgroundColor="Transparent"  
+               HorizontalOptions="CenterAndExpand" TextColor="White" />            
+
+            <RefreshView x:DataType="local:MoviesListViewModel" Command="{Binding LoadCommand}" IsRefreshing="{Binding IsBusy,Mode=TwoWay}">
+                <CollectionView x:Name="MoviesListView"
+                ItemsSource="{Binding LstMovies}"
+                SelectionMode="None"
+                RemainingItemsThreshold="5"
+                RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" x:DataType="model:Movies" >                                
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="8*"></ColumnDefinition>
+                                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="AUTO"></RowDefinition>
+                                        <RowDefinition Height="AUTO"></RowDefinition>
+                                        <RowDefinition Height="AUTO"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding name}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"  FontSize="18"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" />
+                                </Grid>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:MoviesListViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                    </TapGestureRecognizer>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>          
+
+            <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}"
+            VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

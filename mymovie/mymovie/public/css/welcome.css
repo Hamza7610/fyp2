@@ -1,0 +1,80 @@
+.search
+{
+    margin-bottom: 1%;
+}
+.header__search-input
+{
+    width: 100% !important;
+}
+.searchtbtn
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-left: 20px;
+    
+}
+.searchtbtn:focus
+{
+border: 1px solid #ffd80e;
+}
+.searchtbtn:hover
+{
+border: 1px solid #ffd80e;
+}
+.yearselect
+{
+   display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-left: 20px;
+    background-color: #1a191f;
+    height: 40px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: #fff !important;
+    letter-spacing: 0.4px;
+    padding: 0 20px 0 20px;
+}
+.yearselect:focus
+{
+  border: 1px solid #ffd80e;
+}
+.yearselect:hover
+{
+  border: 1px solid #ffd80e;
+}

@@ -1,0 +1,43 @@
+.etc-login-form {
+    color: #919191;
+    padding: 10px 20px;
+}
+
+.etc-login-form p {
+    margin-bottom: 5px;
+}
+
+/*=== 4. Main Form ===*/
+.login-form-1 {
+    border-radius: 5px;
+}
+
+.main-login-form {
+    position: relative;
+}
+
+
+.login-form-1 .form-group:last-child {
+    border-bottom: 0;
+}
+
+.login-group {
+    background: #ffffff;
+    color: #999999;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.logo {
+    padding: 15px 0;
+    font-size: 25px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+.login-button {
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

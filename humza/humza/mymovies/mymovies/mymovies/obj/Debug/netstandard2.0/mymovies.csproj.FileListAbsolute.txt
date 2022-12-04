@@ -1,0 +1,159 @@
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.deps.json
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.dll
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\ref\mymovies.dll
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.pdb
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShelloffline.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\DownloadPage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Playmovie.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\PlayVideoPage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ChallengeResultPopUp.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ConfirmationPopUp.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DailyRewardsPopup.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DefaultPopUp.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetailPage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsEpisodePage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsPage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfoInputs.cache
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfo.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CoreCompileInputs.cache
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CopyComplete
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.dll
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\ref\mymovies.dll
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.pdb
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.AssemblyReference.cache
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\LoggedInAppShell.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ForgotPasswordPage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MoviesList.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsList.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MovieDetail.xaml.g.cs
+C:\Users\Robot\source\repos\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetail.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.deps.json
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.dll
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\ref\mymovies.dll
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.pdb
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShelloffline.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\LoggedInAppShell.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\DownloadPage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ForgotPasswordPage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MovieDetail.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MoviesList.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Playmovie.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\PlayVideoPage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ChallengeResultPopUp.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ConfirmationPopUp.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DailyRewardsPopup.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DefaultPopUp.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetail.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetailPage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsEpisodePage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsList.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsPage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfoInputs.cache
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfo.cs
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CoreCompileInputs.cache
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CopyComplete
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.dll
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\ref\mymovies.dll
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.pdb
+C:\Users\Robot\source\repos\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.AssemblyReference.cache
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.deps.json
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.dll
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.pdb
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.dll
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.pdb
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.xml
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.AssemblyReference.cache
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShelloffline.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\LoggedInAppShell.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\DownloadPage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ForgotPasswordPage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MovieDetail.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MoviesList.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Playmovie.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\PlayVideoPage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ChallengeResultPopUp.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ConfirmationPopUp.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DailyRewardsPopup.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DefaultPopUp.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetail.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetailPage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsEpisodePage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsList.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsPage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfoInputs.cache
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfo.cs
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CoreCompileInputs.cache
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\XamlC.stamp
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CopyComplete
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.dll
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\refint\mymovies.dll
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.pdb
+D:\New folder (2)\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\ref\mymovies.dll
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.deps.json
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.dll
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\mymovies.pdb
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.dll
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.pdb
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\bin\Debug\netstandard2.0\Mono.Android.xml
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.AssemblyReference.cache
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\AppShelloffline.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\LoggedInAppShell.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\DownloadPage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ForgotPasswordPage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MovieDetail.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\MoviesList.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\PlayVideoPage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ChallengeResultPopUp.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\ConfirmationPopUp.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DailyRewardsPopup.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\Popups\DefaultPopUp.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetail.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonDetailPage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsEpisodePage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsList.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SeasonsPage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfoInputs.cache
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.AssemblyInfo.cs
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CoreCompileInputs.cache
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\XamlC.stamp
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.csproj.CopyComplete
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.dll
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\refint\mymovies.dll
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\mymovies.pdb
+D:\New folder (5)\FYp-main\humza\humza\mymovies\mymovies\mymovies\obj\Debug\netstandard2.0\ref\mymovies.dll

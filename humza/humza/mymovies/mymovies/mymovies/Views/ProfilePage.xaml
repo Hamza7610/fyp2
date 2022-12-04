@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mymovies.Views.ProfilePage"
+             xmlns:helpers="clr-namespace:mymovies.Helper">
+    <ContentPage.Resources>
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="materialfont.ttf#Material Design Icons" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="10" Spacing="10" BackgroundColor="{StaticResource Primary}">
+            <Frame  HasShadow="True">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Label Text="User Details" FontSize="24" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="AUTO" />
+                            <ColumnDefinition Width="AUTO" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Name :" FontSize="18" TextColor="Black" Grid.Column="0" />
+                        <Label Text="{Binding User.name}" FontSize="18" TextColor="Black" Grid.Column="1"  FontAttributes="Bold" />
+
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="AUTO" />
+                            <ColumnDefinition Width="AUTO" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Email :" FontSize="18" TextColor="Black" Grid.Column="0" />
+                        <Label x:Name="EmailTitle" Text="{Binding User.email}" FontSize="18" TextColor="Black" Grid.Column="1" FontAttributes="Bold"/>
+                    </Grid>
+                    <Grid>
+                        
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <Frame  HasShadow="True" HeightRequest="300">
+                <StackLayout Orientation="Vertical" Spacing="20">
+                    <Label Text="Change Password" FontSize="24" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" />
+                    <Grid>
+                        <Entry x:Name="oldpass" Unfocused="oldPassword_Unfocused"  Focused="oldPassword_Focused"  Text="{Binding Oldpass}" IsPassword="True"                                 
+                           HeightRequest="40" TextColor="Black" />
+                        <Label x:Name="oldpasslbl" Text="Old Password" FontSize="18">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OldpassPasswordTitle_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                    </Grid>
+                    <Grid>
+                        <Entry x:Name="newpass" Unfocused="newPassword_Unfocused"  Focused="newPassword_Focused"  Text="{Binding Newpass}" IsPassword="True"                                 
+                           HeightRequest="40" TextColor="Black" />
+                        <Label x:Name="newpasstitle" Text="New Password" FontSize="18">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="NewpassPasswordTitle_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <Grid>
+                        <Entry x:Name="newpass2" Unfocused="newpass2Password_Unfocused"  Focused="newpass2Password_Focused"  Text="{Binding Newpass2}" IsPassword="True"                                 
+                           HeightRequest="40" TextColor="Black" />
+                        <Label x:Name="newpass2title" Text="Re-Type Password" FontSize="18">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Newpass2PasswordTitle_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <Button VerticalOptions="Center" Text="Change Password"  Command="{Binding ChangePasswordCommand}"  ImageSource="{FontImage FontFamily={StaticResource MaterialFontFamily},Glyph={x:Static helpers:IconFont.AccountPlus},Size=Large}"/>
+                </StackLayout>
+                
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

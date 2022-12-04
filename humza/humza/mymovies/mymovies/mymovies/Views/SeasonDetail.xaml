@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mymovies.Views.SeasonDetail"
+             xmlns:local="clr-namespace:mymovies.ViewModels"  
+             xmlns:model="clr-namespace:mymovies.Models"
+             xmlns:helpers="clr-namespace:mymovies.Helper">
+    <ContentPage.Resources>
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="materialfont.ttf#Material Design Icons" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="10" BackgroundColor="{StaticResource Primary}">
+            <Image Source="{Binding Season.image_path}" HeightRequest="200" Aspect="AspectFill" />
+            <Label Text="{Binding Season.name}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"  FontSize="16"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" />
+            <StackLayout IsVisible="{Binding Season.isReview}">
+                <Label Text="{Binding Season.reviews.description}"   FontSize="13"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="{StaticResource TextColor}" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="AUTO"></RowDefinition>
+                        <RowDefinition Height="AUTO"></RowDefinition>
+                        <RowDefinition Height="AUTO"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Start">
+                        <CollectionView 
+                                                 ItemsSource="{Binding Season.reviews.RatingList}"
+                                                 HeightRequest="20"
+                                                 HorizontalOptions="Start">
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout Orientation="Horizontal" />
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Button ImageSource="{FontImage FontFamily={StaticResource MaterialFontFamily},Glyph={x:Static helpers:IconFont.Star},Size=18,Color=Yellow}" WidthRequest="30"  />
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label Text="{Binding Season.reviews.IMDBRating}"   FontSize="13"  FontAttributes="Bold" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextColor="{StaticResource TextColor}" />
+                    </StackLayout>
+                    <Label Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Season.reviews.genre}" FontSize="12"  FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="{StaticResource TextColor}" />
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                        <WebView Source="{Binding Season.reviews.link}" WidthRequest="200" HeightRequest="300" HorizontalOptions="Fill" VerticalOptions="Fill"></WebView>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
